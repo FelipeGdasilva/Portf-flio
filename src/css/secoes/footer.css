@@ -1,0 +1,60 @@
+.footer {
+    margin-top: 7rem;
+    text-align: center;
+    background-color: var(--cor-fundo-cinza-claro);
+}
+
+.footer .container {
+    padding: 5rem 0;
+}
+
+.footer h2 {
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-normal);
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.formulario-contato {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.formulario-contato .campo {
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.formulario-contato input, 
+.formulario-contato textarea {
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    border: none;
+    color: var(--cor-branca);
+    font-family: var(--fonte-primaria);
+    font-size: var(--fonte-normal);
+    border-radius: 5px;
+}
+
+.formulario-contato textarea {
+    height: 150px;
+    resize: none;
+}
+
+.formulario-contato .botao {
+    cursor: pointer;
+    background: transparent;
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    padding: 15px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.formulario-contato .botao:hover {
+    background: var(--cor-secundaria);
+    color: #fff;
+}

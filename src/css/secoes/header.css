@@ -1,0 +1,154 @@
+.header {
+    padding: 30px 15px;
+}
+
+/* 1. ESTRUTURA DE ALINHAMENTO */
+.header .container .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Agrupa o Switch de Tema e o Menu à direita */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header .logo {
+    font-family: var(--fonte-secundaria);
+    font-size: var(--fonte-extra-grande);
+    color: var(--cor-branca);
+    border: 2px solid var(--cor-branca);
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    line-height: 55px;
+    text-align: center;
+    text-decoration: underline;
+    transition: 0.2s;
+}
+
+.header a:hover .logo {
+    color: var(--cor-primaria);
+    border: 2px solid var(--cor-primaria);
+}
+
+/* 2. MENU DESKTOP */
+.header nav ul {
+    display: flex;
+}
+
+.header nav li a {
+    text-transform: capitalize;
+    color: var(--cor-branca);
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    transition: 0.2s;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+.header nav ul li a:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+}
+
+/* 3. MENU HAMBÚRGUER (DESENHO) */
+.header .menu {
+    display: none;    
+    width: 60px;
+    height: 60px;        
+}
+
+.header nav label {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+  
+.header .hamburguer {
+    position: relative;
+    display: block;
+    background-color: var(--cor-branca);
+    width: 30px;
+    height: 2px;
+    top: 29px;
+    transition: 0.5s ease-in-out;
+}
+
+.header .hamburguer:before,
+.header .hamburguer:after {
+    background-color: var(--cor-branca);
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: 0.2s ease-in-out;
+}
+
+.header .hamburguer:before { top: -10px; }
+.header .hamburguer:after { bottom: -10px; }
+
+.header input { display: none; }
+
+/* Animação para virar X */
+.header input:checked ~ label .hamburguer {
+    background-color: transparent;
+}
+
+.header input:checked ~ label .hamburguer:before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.header input:checked ~ label .hamburguer:after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+
+/* 4. RESPONSIVIDADE (MOBILE) */
+@media(max-width: 1280px) { 
+    .header { padding: var(--mobile-padding); }
+}
+
+@media(max-width: 900px) {
+    .header .menu {
+        display: block; 
+    }
+
+    /* O SEGREDO: O nav não é mais absolute, ele respeita o vizinho */
+    .header nav {
+        position: relative;
+    }
+
+    .header nav ul {
+        display: none;        
+        flex-direction: column;
+        background-color: var(--cor-fundo-escuro);         
+        padding: 20px;
+        position: fixed; /* O menu suspenso flutua sobre o site */
+        top: 100px;
+        right: 20px;
+        width: 200px;
+        border-radius: 10px;
+        z-index: 1000;
+        box-shadow: var(--outer-shadow);
+    }
+
+    .header nav input:checked ~ ul {
+        display: flex;
+    }
+    
+    .header nav li a {
+        color: var(--cor-branca);
+        text-align: center;                
+        padding: 15px;
+        display: block;
+        font-size: 1.6rem;
+    }
+}

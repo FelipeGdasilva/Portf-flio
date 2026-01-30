@@ -1,0 +1,101 @@
+.projetos .container-projetos {
+    display: grid;        
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    margin: 0 auto;
+    grid-gap: 20px;       
+}
+
+@media(max-width: 1280px) { 
+    .projetos .container-projetos {
+        padding: 0 var(--mobile-padding);
+    }
+}
+
+.projetos .container-projetos .projeto {
+    border-radius: 5px;
+    transition: all 0.3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    position: relative;            
+}
+
+.projetos .container-projetos .projeto:hover,
+.projetos .container-projetos .projeto:hover .informacoes-projeto {
+    opacity: 0.8;
+}
+
+.projetos .container-projetos .projeto img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 100%;
+}
+
+.projetos .container-projetos .projeto .informacoes-projeto {
+    padding: 20px 20px;    
+    background-color: var(--cor-fundo-escuro);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;    
+    transition: all .3s ease;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.projetos .container-projetos .projeto .informacoes-projeto p:nth-child(2) {
+    font-weight: 500;
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+.projetos .container-projetos .projeto h3 {
+    font-size: 2rem;
+    font-weight: 500;    
+    position: absolute;      
+    opacity: 0.7;
+    background-color: var(--cor-fundo-escuro);
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    bottom: 0;
+}
+
+/* --- Estilo para os projetos futuros --- */
+
+.projeto.em-desenvolvimento {
+    cursor: not-allowed; /* Mostra um ícone de "proibido" ao passar o mouse */
+    overflow: hidden;
+}
+
+/* Deixa a imagem cinza e com um pouco de desfoque */
+.projeto.em-desenvolvimento img {
+    filter: grayscale(1) blur(1px);
+    opacity: 0.4;
+    transition: 0.3s;
+}
+
+/* Cria a faixa de "Em Breve" */
+.projeto.em-desenvolvimento::after {
+    content: "EM BREVE";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--cor-secundaria); /* Usa o seu laranja */
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    z-index: 5;
+}
+
+/* Impede o hover de mostrar as informações se estiver em desenvolvimento */
+.projeto.em-desenvolvimento:hover .informacoes-projeto {
+    display: none;
+}
