@@ -1,50 +1,40 @@
-# Portfólio — Felipe Gomes
+# 🌐 Portfólio - Felipe Gomes
 
-Este é o meu portfólio pessoal como **Desenvolvedor Frontend**, onde apresento meus principais projetos, habilidades técnicas e formas de contato.
+Meu portfólio pessoal como **Desenvolvedor Front-end**, criado para apresentar meus projetos, habilidades e informações de contato de forma clara e objetiva.
 
-O objetivo deste portfólio é demonstrar minha evolução prática no desenvolvimento web, com foco em boas práticas, organização de código e experiência do usuário.
+---
 
-## 👨‍💻 Sobre mim
-Sou Desenvolvedor Frontend, apaixonado por tecnologia e sempre em busca de evolução constante.  
-Atualmente estou em **transição para Fullstack**, aprofundando meus estudos em backend enquanto continuo desenvolvendo projetos frontend.
+## 🚀 Tecnologias utilizadas
 
-## 🧠 Tecnologias e habilidades
-- HTML5 (semântica e acessibilidade)
-- CSS3 (Flexbox, Grid Layout, responsividade)
-- JavaScript (ES6+)
-- React
-- Git e GitHub
-- Versionamento e organização de projetos
+- HTML5
+- CSS3
+- JavaScript
+- Git & GitHub Pages
 
-## 📂 Projetos em destaque
-### 🎮 Sonic Battle Universe
-Interface interativa inspirada em sistemas de seleção de personagens de jogos.
+---
 
-**Tecnologias:**  
-React, JavaScript (ES6+), HTML5, CSS3
+## 📂 Sobre o projeto
 
-🔗 **Projeto online:**  
-https://felipegdasilva.github.io/Sonic-Battle-Universe/
+Este portfólio foi desenvolvido com foco em **estrutura semântica**, **design responsivo** e **boa experiência do usuário**, servindo como central para visualização dos meus projetos e evolução como desenvolvedor.
 
-🔗 **Repositório:**  
-https://github.com/FelipeGdasilva/Sonic-Battle-Universe
+---
 
-> Outros projetos estão em desenvolvimento e serão adicionados em breve.
+## 🔗 Acesse o portfólio
 
-## 🌗 Funcionalidades do portfólio
-- Layout responsivo
-- Dark / Light Mode
-- Seções bem definidas
-- Apresentação clara dos projetos
-- Formulário de contato funcional
+👉 https://SEU-LINK-DO-GITHUB-PAGES-AQUI
 
-## 🌐 Acesse o portfólio
-🔗 https://SEU-LINK-DO-GITHUB-PAGES-AQUI
+---
 
-## 📬 Contato
+## 📌 Projetos em destaque
+
+- 🎮 Sonic Battle Universe (React)
+- 🍄 Super Mario
+- Outros projetos em desenvolvimento
+
+---
+
+## 📫 Contato
+
 - LinkedIn: https://www.linkedin.com/in/felipe-gomes-da-silva-a7a252263/
-- GitHub: https://github.com/FelipeGomesSilva
-- WhatsApp: disponível no portfólio
+- GitHub: https://github.com/FelipeGdasilva
 
-## 📌 Status
-🚧 Em constante evolução
