@@ -21,7 +21,7 @@ Este portfólio foi desenvolvido com foco em **estrutura semântica**, **design 
 
 ## 🔗 Acesse o portfólio
 
-👉 https://SEU-LINK-DO-GITHUB-PAGES-AQUI
+👉 https://felipegdasilva.github.io/Portf-flio/
 
 ---
 
@@ -37,4 +37,5 @@ Este portfólio foi desenvolvido com foco em **estrutura semântica**, **design 
 
 - LinkedIn: https://www.linkedin.com/in/felipe-gomes-da-silva-a7a252263/
 - GitHub: https://github.com/FelipeGdasilva
+
 
